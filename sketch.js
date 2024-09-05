@@ -11,11 +11,11 @@ let y2Speed = 5; // speed in Y direction
 let d2 = 50;      // diameter of the ball
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(800, 800);
 }
 
 function draw() {
-  background(220); // try commenting this out!
+  //background(220); // try commenting this out!
  
   // if x hits the right side or the left side of the canvas,
   // switch directions...
@@ -30,9 +30,7 @@ function draw() {
   }
   y1 = y1 + y1Speed;
 
-  ellipse(x1, y1, d1)
-
-  // if x hits the right side or the left side of the canvas,
+  ellipse(x1, y1, d1) // if x hits the right side or the left side of the canvas,
   // switch directions...
   if (x2 > width || x2 < 0) {
     x2Speed = x2Speed * -1;  
