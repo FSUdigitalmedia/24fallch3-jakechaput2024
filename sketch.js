@@ -30,7 +30,7 @@ function draw() {
   }
   y1 = y1 + y1Speed
    
-  ellipse(mouseX, mouseY, 33, 33);
+  ellipse(mouseX, mouseY, 120, 120);
 
   // if x hits the right side or the left side of the canvas,
   // switch directions...
