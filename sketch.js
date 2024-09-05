@@ -15,7 +15,7 @@ function setup() {
 }
 
 function draw() {
-  background(220); // try commenting this out!
+  background(220, 30); // try commenting this out!
 
   // if x hits the right side or the left side of the canvas,
   // switch directions...
