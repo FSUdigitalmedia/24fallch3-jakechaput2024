@@ -25,13 +25,44 @@ function draw() {
     fill(random(250), random(250), random(250)); //changes colors for ellipse 1 when it hits walls
   }
   x1 = x1 + x1Speed; // adding a negative xSpeed *decreases* x, right?
-  
+  if ((keyIsPressed == true) && (key == '1')) {
+    fill(245, 75, 66); //this makes the colors change when number key is pressed
+  }
+  if ((keyIsPressed == true) && (key == '2')) {
+    fill(245, 167, 66)
+  }
+  if ((keyIsPressed == true) && (key == '3')) {
+    fill(250, 248, 115)
+  }
+  if ((keyIsPressed == true) && (key == '4')) {
+    fill(176, 250, 107)
+  }
+  if ((keyIsPressed == true) && (key == '5')) {
+    fill(129, 230, 194)
+  }
+  if ((keyIsPressed == true) && (key == '6')) {
+    fill(125, 176, 240)
+  }
+  if ((keyIsPressed == true) && (key == '7')) {
+    fill(131, 114, 242)
+  }
+  if ((keyIsPressed == true) && (key == '8')) {
+    fill(227, 137, 245)
+  }
+  if ((keyIsPressed == true) && (key == '9')) {
+    fill(232, 116, 164)
+  }
+  if ((keyIsPressed == true) && (key == '0')) {
+    fill(255, 255, 255)
+  }
+
   // same as above, but for the top and bottom of the canvas
   if (y1 > width || y1 < 0) {
     y1Speed = y1Speed * -1; 
     fill(random(250), random(250), random(250)); //changes colors for ellipse 1 when it hits walls
   }
   y1 = y1 + y1Speed
+  
    
   ellipse(mouseX, mouseY, 120, 120) //ellpse 1 to cursor; 120,120 is cursor ellipse diameter
     
@@ -49,5 +80,6 @@ function draw() {
   y2 = y2 + y2Speed;
 
   ellipse(x2, y2, d2);
+
 
 }
