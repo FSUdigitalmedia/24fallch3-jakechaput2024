@@ -11,11 +11,11 @@ let y2Speed = 7; // speed in Y direction
 let d2 = 80;      // diameter of the ball
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(800, 800);
 }
 
 function draw() {
-  background(220, 30); // try commenting this out!
+  background(220, 50); // try commenting this out!
 
   // if x hits the right side or the left side of the canvas,
   // switch directions...
