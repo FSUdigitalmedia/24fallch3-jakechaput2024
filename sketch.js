@@ -16,6 +16,7 @@ function setup() {
 
 function draw() {
   background(220, 50); // try commenting this out!
+  noStroke(); //gets rid of lines around shapes
 
   // if x hits the right side or the left side of the canvas,
   // switch directions...
@@ -37,9 +38,10 @@ function draw() {
   // if x hits the right side or the left side of the canvas,
   // switch directions...
   if (x2 > width || x2 < 0) {
-    x2Speed = x2Speed * -1; 
+    x2Speed = x2Speed * -1;
   }
   x2 = x2 + x2Speed; 
+  
 
   if (y2 > width || y2 < 0) {
     y2Speed = y2Speed * -1;  
