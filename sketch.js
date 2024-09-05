@@ -33,12 +33,11 @@ function draw() {
   y1 = y1 + y1Speed
    
   ellipse(mouseX, mouseY, 120, 120) //ellpse 1 to cursor; 120,120 is cursor ellipse diameter
-   //this changes both ellipse colors but it looks fugly
     
   // if x hits the right side or the left side of the canvas,
   // switch directions...
   if (x2 > width || x2 < 0) {
-    x2Speed = x2Speed * -1;  
+    x2Speed = x2Speed * -1; 
   }
   x2 = x2 + x2Speed; 
 
