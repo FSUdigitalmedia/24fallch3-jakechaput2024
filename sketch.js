@@ -17,6 +17,11 @@ function setup() {
 function draw() {
   background(220, 50); // try commenting this out!
   noStroke(); //gets rid of lines around shapes
+  //when I get rid of BG I need to get rid of noStroke as well??
+
+let ix = width - mouseX;  // Inverse X
+let iy = height - mouseY; // Inverse Y
+ellipse(ix, height/2, iy, iy); //makes really funky circle that changes depending on mouse location
 
   // if x hits the right side or the left side of the canvas,
   // switch directions...
@@ -81,5 +86,8 @@ function draw() {
 
   ellipse(x2, y2, d2);
 
-
+function mousePressed(fxn){
+  x1Speed = random;
+  y1Speed = random;
+}
 }
